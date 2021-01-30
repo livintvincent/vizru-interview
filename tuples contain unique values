@@ -1,0 +1,27 @@
+Q: How to check that tuple A contains all elements of tuple B. Do both tuples contain unique values? Write a program for this
+
+
+A = (5, 10)
+
+B = (10, 4, 5, 6)
+
+# printing original tuples
+
+print("The original tuple A : " + str(A))
+
+print("The original tuple B : " + str(B))
+
+# Check if one tuple is subset of other
+# using issubset()
+
+res = set(A).issubset(B)
+# printing result
+
+print("Is tuple A subset of B? : " + str(res))
+
+def cmpT(A,B):
+    if A==B:
+        return True
+    else:
+        return False
+print(cmpT(A,B))
